@@ -7,24 +7,91 @@
     <title>Spotify</title>
 
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
     
     <main>
         <div id="container-main">
+             <!-- navbar -->
              <div id="navbar">
-                 <div class="section-navbar">
-                     <div id="logo"></div>
-                     <div id="menu"></div>
-                     <div id="playlist"></div>
-                 </div>
+                 <div id="upper-navbar">
+                     <!-- logo -->
+                     <div id="logo">
+                         <img src="img/logo.svg" alt="logo">
+                     </div>
+                     <!-- /logo -->
+                      
+                     <!-- menu -->
+                     <div id="menu">
+                         <div class="menu-items">
+                             <div class="container-img">
+                                 <img src="img/home.svg" alt="home">
+                             </div>
+                             <span>Home</span>
+                         </div>
 
-                 <div class="section-navbar">
-                     <div id="selected-artist"></div>
-                 </div>
+                         <div class="menu-items">
+                             <div class="container-img">
+                                 <img src="img/search.svg" alt="cerca">
+                             </div>
+                             <span>Cerca</span>
+                         </div>
 
+                         <div class="menu-items">
+                             <div class="container-img">
+                                 <img src="img/libreria.svg" alt="libreria">
+                             </div>
+                             <span>La tua libreria</span>
+                         </div>
+                     </div>
+
+                     <!-- /menu -->
+
+                     <!-- playlist -->
+                     <div id="playlist">
+                         <div><b>Playlist</b></div>
+                         <div id="crea">
+                             <div id="add"><i class="fa-solid fa-plus"></i></div>
+                             <span>Crea Playlist</span>
+                         </div>
+                         <div class="playlist-name">Nome Playlist</div>
+                         <div class="playlist-name">Nome Playlist</div>
+                         <div class="playlist-name">Nome Playlist</div>
+                         <div class="playlist-name">Nome Playlist</div>
+                         <div class="playlist-name">Nome Playlist</div>
+                         <div class="playlist-name">Nome Playlist</div>
+                         <div class="playlist-name">Nome Playlist</div>
+                     </div>
+                     <!-- /playlist -->
+                 </div>
+                     
+
+                 <div id="lower-navbar">
+                     <div id="installa">
+                         <div class="container-img">
+                             <img src="img/download.svg" alt="download">
+                         </div>
+                         <span>Installa app</span>
+                     </div>
+
+                     <hr>
+
+                     <div id="artist">
+                          <div class="container-img">
+                             <img src="img/profile.svg" alt="profile">
+                          </div>
+                          <span>John Doe</span>
+                     </div>
+                 </div>
              </div>
-
+              <!-- /navbar -->
+              
 
              <div id="main-section">
 
