@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* main */
+#container-main{
+    height: 85vh;
+    width: 100/%;
+
+    border: 1px solid black;
+}
+/* navbar */
+#navbar{
+    width: 15%;
+    height: 85vh;
+
+    /* test */
+
+    background-color: black;
+}
+/* /navbar */
+ 
+/* main-section */
+#main-section{
+
+}
+/* /main-section */
+/* /main */
+
+/* footer */
+#container-footer{
+    width: 100vw;
+    height: 15vh;
+
+    background-color: grey;
+}
+/* /footer */
