@@ -178,6 +178,8 @@ main{
     width: 100%;
 
     background-color: #141922;
+
+    overflow-y: scroll;
 }
 
 #main-interface #preferences-bar{
@@ -205,6 +207,46 @@ main{
     color: white;
     font-size: 12px;
 }
+
+.row{
+    width: 100%;
+    height: 220px;
+
+    border: 1px solid black;
+
+    background-color: yellow;
+}
+
+.titol-row{
+    color: white;
+    font-size: 22px;
+
+    margin-top: 5px;
+}
+
+.row-cover-album_description{
+    height: calc(100% - 18px);
+
+    
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.cover-album_description{
+
+}
+.cover-album{
+    height: 70%;
+}
+
+.cover-album img{
+    height: 100%;
+}
+
+.decription-album{
+    height: 30%;
+}
 /* /main */
 
 
@@ -212,7 +254,7 @@ main{
 
 /* footer */
 #container-footer{
-    width: 100vw;
+    width: 100%;
     height: 15vh;
 
     background-color: grey;
