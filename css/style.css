@@ -165,10 +165,11 @@ nav{
 main{
     height: calc(100% - 70px);
     width: 85%;
+
+    overflow-y: scroll;
 }
 
 #container-main{
-    height: 85vh;
     width: 100%;
 
     background-color: blue;
@@ -206,8 +207,6 @@ main{
     height: 90%;
 
     background-color: #141922;
-
-    overflow-y: scroll;
 }
 
 #main-interface #preferences-bar{
