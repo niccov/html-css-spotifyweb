@@ -5,7 +5,7 @@
 }
 
 #top-container{
-    height: 85vh;
+    height: calc(100% - 70px);
 
     border: 1px solid black;
 
@@ -13,13 +13,13 @@
 }
 
 nav{
-    /* test */
+    
     max-width: 15%;
 }
 
 /* navbar */
 #navbar{
-    height: 85vh;
+    height: 100%;
 
     background-color: black;
 
@@ -163,7 +163,7 @@ nav{
 
 /* main*/
 main{
-    /* test */
+    height: calc(100% - 70px);
     width: 85%;
 }
 
@@ -254,7 +254,6 @@ main{
 }
 
 .cover-album{
-    height: 150px;
     max-width: 150px;
 }
 
@@ -306,8 +305,12 @@ main{
 
 
 /* footer */
+footer{
+    height: 70px;
+}
+
 #container-footer{
-    height: 15vh;
+    height: 70px;
 
     font-family: 'Montserrat', sans-serif;
 
