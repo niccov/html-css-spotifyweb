@@ -14,7 +14,7 @@
 
 nav{
     /* test */
-    width: 15%;
+    max-width: 15%;
 }
 
 /* navbar */
@@ -33,7 +33,7 @@ nav{
 
 /* upper-navbar */
 #upper-navbar{
-    margin: 0px 60px 0px 5px;
+    margin: 0px 55px 0px 10px;
 
     font-size: 16px;
 }
@@ -100,7 +100,7 @@ nav{
 
 /* lower-navbar */
 #lower-navbar{
-    width: 95%;
+    width: 100%;
 
     color: white;
 }
@@ -117,9 +117,30 @@ nav{
     width: 100%;
 }
 
+#lower-navbar > div{
+    margin:5px 0px 5px 10px;
+}
+
+#lower-navbar hr{
+    max-width: 70%;
+
+    margin-left: 10px;
+}
+
+#box-installa{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#installa span{
+    color: #7D7F84;
+    font-size: 12px;   
+}
+
 #artist .container-img{
     border-radius: 50%;
-
+    
     background-color: grey;
 }
 
@@ -127,8 +148,14 @@ nav{
     border-radius: 50%;
 }
 
-#lower-navbar > div{
-    margin:5px 0px 5px 0px;
+#artist{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#artist span{
+    font-size: 14px;
 }
 /* /lower-navbar */
 
@@ -142,15 +169,17 @@ main{
 
 #container-main{
     height: 85vh;
+    width: 100%;
 
     background-color: blue;
+
+    font-family: 'Montserrat', sans-serif;
 }
 
 #upgrade{
     height: 10%;
-    width: 100%;
 
-    background-color: red;
+    background-color: black;
 
     position: relative;
 }
@@ -166,7 +195,7 @@ main{
     background-color: black;
 
     border-radius: 25px;
-    border-color: white;
+    border: 1px solid white;
 
     position: absolute;
     right: 0px;
@@ -175,7 +204,6 @@ main{
 
 #main-interface{
     height: 90%;
-    width: 100%;
 
     background-color: #141922;
 
@@ -183,10 +211,7 @@ main{
 }
 
 #main-interface #preferences-bar{
-    width: 100%;
     height: 10%;
-
-    background-color: grey;
 }
 
 #main-interface #preferences-bar #container-preferences-bar{
@@ -199,53 +224,81 @@ main{
     align-items: center;
     /* test */
     height: 100%;
-
-    background-color: aqua;
 }
 
-.items-preferences-bar{
-    color: white;
+.items-preferences-bar a{
+    color: #7D7F84;
     font-size: 12px;
+
+    text-decoration: none;
 }
 
 .row{
-    width: 100%;
-    height: 220px;
-
-    border: 1px solid black;
-
-    background-color: yellow;
+    margin-bottom: 15px;
 }
 
 .titol-row{
     color: white;
     font-size: 22px;
 
-    margin-top: 5px;
+    margin: 10px 20px 10px;
 }
 
-.row-cover-album_description{
-    height: calc(100% - 18px);
-
-    
-
+.row-cover-album_description.one{
     display: flex;
     justify-content: space-around;
+    gap: 5px;
+
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
-.cover-album_description{
-
-}
 .cover-album{
-    height: 70%;
+    height: 150px;
+    max-width: 150px;
 }
 
 .cover-album img{
-    height: 100%;
+    width: 100%;
 }
 
-.decription-album{
-    height: 30%;
+.description-album{
+    max-width: 150px;
+
+    text-align: center;
+
+    padding-top: 10px;
+}
+
+.description-album div:first-child{
+    color: white;
+}
+
+.description-album div:nth-child(2){
+    font-size: 12px;
+    color: #7D7F84;
+}
+
+/* second row */
+.row-cover-album_description.two{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+
+    margin-left: 20px;
+    max-width: 320px
+}
+
+.titol-row2{
+    color: #7D7F84; 
+    font-size: 12px;
+    
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.cover-album.row3 img{
+    border-radius: 50%;
 }
 /* /main */
 
@@ -254,9 +307,98 @@ main{
 
 /* footer */
 #container-footer{
-    width: 100%;
     height: 15vh;
 
+    font-family: 'Montserrat', sans-serif;
+
     background-color: grey;
+
+    display: flex;
+    justify-content: space-between;
 }
+
+/* footer left */
+.footer-left{
+    height: 100%;
+    width: 100%;
+    max-width: 210px;
+
+    background-color: #282828;
+
+    display: flex;
+    align-items: center;
+}
+
+#song{
+    width: 65%;
+
+    margin-left: 10px;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#footer-album-img{
+    width: 50px;
+    height: 50px;
+}
+
+#footer-album-img img{
+    height: 100%;
+}
+
+#name-song-footer #name-song{
+    font-size: 12px;
+    color: white;
+}
+
+#name-song-footer #sub-name{
+    font-size: 10px;
+    color: #7D7F84;
+}
+
+#functions-song{
+    width: 40%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+#functions-song .fa-regular.fa-heart{
+    font-size: 18px;
+    color: #7D7F84;
+} 
+
+#functions-song .fa-regular.fa-folder{
+    font-size: 18px;
+    color: #7D7F84;
+
+    margin-right: 10px;
+} 
+/* /footer left */
+
+/* footer center */
+.footer-center{
+    height: 100%;
+    width: 100%;
+    min-width: 200px;
+    width: 500px;
+
+
+    background-color: blueviolet;
+}
+/* /footer center */
+
+/* footer right */
+.footer-right{
+    height: 100%;
+    width: 100%;
+    max-width: 210px;
+
+    background-color: green;
+}
+/* /footer right */
 /* /footer */
